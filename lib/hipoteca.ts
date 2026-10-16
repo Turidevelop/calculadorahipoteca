@@ -23,7 +23,7 @@ export type FilaAmortizacion = {
 
 export type CamposHipoteca = Record<keyof DatosHipoteca, string>;
 
-function aNumero(texto: string): number {
+export function aNumero(texto: string): number {
   const limpio = texto.trim().replace(",", ".");
   return limpio === "" ? NaN : Number(limpio);
 }
